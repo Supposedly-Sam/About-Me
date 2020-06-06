@@ -112,6 +112,10 @@ html, head, body {
     bottom: 15px;
     font-family: iconfont;
 }
+.social:target {
+    animation: social .50s linear;
+    animation-delay: .25s; 
+}
 .social a {
     color: white;
     text-decoration: none;
@@ -123,4 +127,9 @@ html, head, body {
 .spacer{
     margin-left: 5px;
     margin-right: 5px;
+}
+@keyframes social {
+    0%  {transform: scale(1.0);}
+    50% {transform: scale(1.25);}
+    100%{transform: scale(1.0);}
 }
