@@ -30,7 +30,7 @@ html, head, body {
 }
 .intro-text {
     color: #fff;
-    width: 380px;
+    width: 280px;
     position: absolute;
     display: inline-block;
 }
@@ -88,10 +88,12 @@ html, head, body {
     position: absolute;
     display: inline-block;
     color: #fff;
-    width: 300px;
+    width: 500px;
+    height: 300px;
     text-align: center;
     font-family: 'Open Sans';
     font-weight: 300;    
+    opacity: 100%;
 }
 .info-h3 {
     margin: 0px;
@@ -103,24 +105,61 @@ html, head, body {
 .info-link:hover {
     color: #1A237E;
 }
-.social {
-    display: inline-block;
-    width: 310px;
-    font-size: 25px;
-    position: absolute;
-    color: white;
-    bottom: 15px;
-    font-family: iconfont;
+.form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 25px;
+    background-color: rgba(18,18,18, 0.85)
 }
-.social a {
-    color: white;
-    text-decoration: none;
+.message-text {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.input {
+    margin-left: 0px;
+    width: 170px;
+    background-color: rgb(97,97,97);
+    color: #fff;
+    border-style: solid;
+    border-color: #121212;
+    border-width: 2px;
+    border-radius: 8px;
+}
+::placeholder {
+    color: #fff;
+    font-family: 'Open Sans';
+}
+.button {
+    margin-top: 0px;
+    background-color: #121212;
+    width: 100px;
+    height: 50px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(97,97,97);
+    color: #fff;
+    font-family: 'Open Sans';
+    box-sizing: initial;
+    padding: 0 0;
+    border-radius: 10px;
+    color: #fff;
+
+}
+.button:hover {
+    background-color:   rgb(97,97,97);;
     transition: .5s;
 }
-.social a:hover {
-    color: #1A237E
+.form-name {
+    height: 30px;
 }
-.spacer{
-    margin-left: 5px;
-    margin-right: 5px;
+.email {
+    height: 30px;
+}
+.message{
+    margin-left: 20px;
+}
+.message-text{
+    position: relative;
+    bottom: 60px;
+    left: 15px;
 }
