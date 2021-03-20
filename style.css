@@ -19,38 +19,55 @@ html, head, body {
     scroll-behavior: smooth;
 }
 .image-cover {
-    margin-top: 0px;
-    background-color: #121212;
     width: 100%;
     height: 100%;
+    margin-top: 0px;
+    background-color: #121212;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding-bottom: 0;
 }
 .intro-text {
+    width: 276px;
     color: #fff;
-    width: 380px;
     position: absolute;
-    display: inline-block;
+    align-content: space-between; 
+    flex-wrap: nowrap;
+    height: 130px;
 }
 .name {
+    width: 276px;    
     text-align: center;
     font-family: 'Open Sans';
     font-size: 50px;
+    position: absolute;
+    margin-top: 0;
+    padding-top: 0;
 }
 .tagline {
+    width: 100%;    
     text-align: center;
     font-family: 'Open Sans';
     font-size: 25px;
     font-weight: 300;
-    margin-top: -35px;
+    opacity: 100%;
+    position: absolute;
+    padding-top: 45px;
+    padding-left: 0;
+    animation: tagline .5s linear;
+}
+@keyframes tagline {
+    0% {opacity: 0%;}
+    50% {opacity: 10%;}
+    100% {opacity: 100%;}
 }
 .arrow {
+    width: 50px;
+    height: 50px;    
     color: #616161;
     position: absolute;
-    width: 50px;
-    height: 50px;
     animation: jumpy-arrow-2 3s linear 1s infinite;
     bottom: 10px;
 }
@@ -76,25 +93,28 @@ html, head, body {
     40%     {transform: translateY(0px);}
 }
 .info-cover {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    background-color: #3D5AFE;
+    height: 100%;    
+    position: absolute;
+    background-color: #011aa7;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 .info-text {
+    width: 300px;
+    height: 240px;  
     position: absolute;
     display: inline-block;
     color: #fff;
-    width: 300px;
     text-align: center;
     font-family: 'Open Sans';
     font-weight: 300;    
 }
 .info-h3 {
-    margin: 0px;
+    position: absolute;
+    margin-top: 0;
+    padding-top: 0;
 }
 .info-link {
     color: white;
@@ -104,13 +124,15 @@ html, head, body {
     color: #1A237E;
 }
 .social {
-    display: inline-block;
-    width: 310px;
+    position: absolute;    
+    width: 320px;    
+    display: flex;
     font-size: 25px;
-    position: absolute;
     color: white;
     bottom: 15px;
     font-family: iconfont;
+    gap: 25px;
+    padding-bottom: -10px;
 }
 .social:target {
     animation: social .50s linear;
@@ -121,15 +143,29 @@ html, head, body {
     text-decoration: none;
     transition: .5s;
 }
-.social a:hover {
-    color: #1A237E
-}
-.spacer{
-    margin-left: 5px;
-    margin-right: 5px;
-}
+ .social a:hover {
+    color: #0e1ed1
+} 
 @keyframes social {
     0%  {transform: scale(1.0);}
     50% {transform: scale(1.25);}
     100%{transform: scale(1.0);}
+}
+#music:hover {
+    color: #FA233B
+}
+#facebook:hover {
+    color: #3B5998;
+}
+#github:hover {
+    color: #24292e;
+}
+#instagram:hover {
+    color: #e1306c;
+}
+#spotify:hover {
+    color: #1ED760;
+}
+#twitter:hover {
+    color: #1DA1F2;
 }
