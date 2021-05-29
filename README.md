@@ -1,7 +1,7 @@
 Personal Website
 ==================
 Here lies the code to my personal website.
-You can visit my website [here](https://samueladams.me)
+You can visit my website [here](https://samada.ms)
 
 -------------------------------------------------------
 
