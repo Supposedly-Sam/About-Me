@@ -1,15 +1,18 @@
 @font-face {
     font-family: IconFont;
     src: url(assets/iconfont/icomoon.woff);
+    font-display: swap;
 }
 @font-face{
     font-family: 'Open Sans';
     src: url(assets/fonts/OpenSans-Regular.ttf);
+    font-display: swap;
 }
 @font-face{
     font-family: 'Open Sans';
     src: url(assets/fonts/OpenSans-Light.ttf);
     font-weight: 300;
+    font-display: swap;
 }
 html, head, body {
     margin: 0px;
