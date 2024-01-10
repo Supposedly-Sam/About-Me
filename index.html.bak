@@ -8,7 +8,6 @@
 		<title>Sam Adams - Personal Website</title>
 		<link rel="stylesheet" rel="preload" href="style.css" />
 		<link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
-		<link rel="me" href="https://mastodon.social/@supposedlysam">
 		<meta
 			name="Description"
 			content="This is the offical website of Sam Adams. supposedly.sam on instagram and Supposedly-Sam on twitter"
